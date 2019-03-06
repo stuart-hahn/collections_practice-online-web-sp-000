@@ -42,5 +42,6 @@ def add_s(words)
       word
     else
       "#{word}s"
+    end
   end
 end
