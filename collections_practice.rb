@@ -37,5 +37,10 @@ def sum_array(arr)
 end
 
 def add_s(arr)
-  arr.each_with_index.collect {|ele, i| ele[i != 1] = "#{ele}s"}
+  arr.each_with_index.collect do |ele, i|
+    if ele[1] == ele
+      ele
+    else
+      "#{ele}s"
+  end
 end
